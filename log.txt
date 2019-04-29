@@ -1,0 +1,9 @@
+Feb 21, 2019 1:11:10 PM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.FailDetect.Nodes.ControllerNode cannot be cast to projects.FailDetect.Nodes.SensorNode
+	at projects.FailDetect.fault.ChangeStatus.next(ChangeStatus.java:18)
+	at projects.FailDetect.CustomGlobal.preRound(CustomGlobal.java:40)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+

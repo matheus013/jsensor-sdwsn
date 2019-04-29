@@ -1,0 +1,22 @@
+time: 0	 sensorID: 65
+time: 0	 sensorID: 61
+time: 0	 sensorID: 57
+time: 0	 sensorID: 66
+time: 0	 sensorID: 62
+time: 0	 sensorID: 58
+time: 0	 sensorID: 63
+time: 0	 sensorID: 59
+time: 0	 sensorID: 51
+time: 0	 sensorID: 64
+time: 0	 sensorID: 60
+time: 1	 sensorID: 64	 sendTo: 49
+time: 1	 sensorID: 63	 sendTo: 44
+time: 1	 sensorID: 66	 sendTo: 15
+time: 1	 sensorID: 65	 sendTo: 10
+time: 1	 sensorID: 60	 sendTo: 8
+time: 1	 sensorID: 59	 sendTo: 40
+time: 1	 sensorID: 61	 sendTo: 16
+time: 1	 sensorID: 62	 sendTo: 26
+time: 1	 sensorID: 57	 sendTo: 5
+time: 1	 sensorID: 51	 sendTo: 31
+time: 1	 sensorID: 58	 sendTo: 26

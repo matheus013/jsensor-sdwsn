@@ -1,0 +1,34 @@
+Settings --------------------
+project Name: SDWSN
+dimX: 10
+dimY: 10
+cell Size: 25
+debug: true
+log: true
+seed Random: 1587632589
+number Of Threads: 4
+number Of Chunks: 4
+Mobility: false
+Facts: false
+
+Message Transmission Model: projects.SDWSN.MessageTransmissionModels.ConstantTime
+Sensor: projects.SDWSN.Nodes.Sensor
+Number: 50
+Distribution Model: projects.SDWSN.DistributionModels.RandomDistribution
+Connectivity Model: projects.SDWSN.ConnectivityModels.NodeConectivity
+Node Radio: 1
+Communication Radio: 25
+Sensor: projects.SDWSN.Nodes.Controller
+Number: 1
+Distribution Model: projects.SDWSN.DistributionModels.RandomDistribution
+Connectivity Model: projects.SDWSN.ConnectivityModels.NodeConectivity
+Node Radio: 1
+Communication Radio: 25
+-----------------------------
+
+
+
+Generation of the nodes: 0.046 seconds
+time: 549.0 (ms) -- 0.55 (s) -- 0.01 (m) -- 0.00 (h)
+memory comsuption: 257 MB
+number of events: 3
