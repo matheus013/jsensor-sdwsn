@@ -3,13 +3,14 @@ package projects.SDWSN.Messages;
 import jsensor.nodes.Node;
 import jsensor.nodes.messages.Message;
 import projects.SDWSN.Nodes.Sensor;
-import projects.SDWSN.Nodes.TypeSense;
+import projects.SDWSN.Service.TypeSense;
 
 import java.util.LinkedList;
 
 public class ServicesReportMessage extends Message {
     private LinkedList<TypeSense> typeSenses;
-    private Node destination;
+    private int destination;
+    private int sender;
 
     public ServicesReportMessage(Node node) {
         if (node instanceof Sensor) {
@@ -23,8 +24,12 @@ public class ServicesReportMessage extends Message {
         return typeSenses;
     }
 
-    public Node getDestination() {
+    public int getDestination() {
         return destination;
+    }
+
+    public int getSender() {
+        return sender;
     }
 
     @Override

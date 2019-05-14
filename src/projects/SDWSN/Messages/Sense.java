@@ -2,13 +2,13 @@ package projects.SDWSN.Messages;
 
 import jsensor.nodes.Node;
 import jsensor.nodes.messages.Message;
-import projects.SDWSN.Nodes.TypeSense;
+import projects.SDWSN.Service.TypeSense;
 
 
 public class Sense extends Message {
     private double read;
-    private Node sender;
-    private Node destination;
+    private int sender;
+    private int destination;
     private int hops;
     private short chunk;
     private TypeSense type;
@@ -16,7 +16,7 @@ public class Sense extends Message {
     public Sense() {
     }
 
-    public Sense(double read, Node sender, Node destination, int hops, long ID) {
+    public Sense(double read, int sender, int destination, int hops, long ID) {
         this.setHops(hops)
                 .setRead(read)
                 .setSender(sender)
@@ -24,7 +24,7 @@ public class Sense extends Message {
                 .setID(ID);
     }
 
-    public Sense(double read, Node sender, Node destination, byte chunk) {
+    public Sense(double read, int sender, int destination, byte chunk) {
         this.setHops(hops)
                 .setRead(read)
                 .setSender(sender)
@@ -32,14 +32,14 @@ public class Sense extends Message {
                 .setChunk(chunk);
     }
 
-    public Sense(double read, Node sender, Node destination) {
+    public Sense(double read, int sender, int destination) {
         this.setHops(hops)
                 .setRead(read)
                 .setSender(sender)
                 .setDestination(destination);
     }
 
-    public Sense(double read, Node sender) {
+    public Sense(double read, int sender) {
         this.setHops(hops)
                 .setRead(read)
                 .setSender(sender);
@@ -54,20 +54,20 @@ public class Sense extends Message {
         return this;
     }
 
-    public Node getSender() {
+    public int getSender() {
         return sender;
     }
 
-    public Sense setSender(Node sender) {
+    public Sense setSender(int sender) {
         this.sender = sender;
         return this;
     }
 
-    public Node getDestination() {
+    public int getDestination() {
         return destination;
     }
 
-    public Sense setDestination(Node destination) {
+    public Sense setDestination(int destination) {
         this.destination = destination;
         return this;
     }

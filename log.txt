@@ -7,3 +7,118 @@ java.lang.ClassCastException: projects.FailDetect.Nodes.ControllerNode cannot be
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
 
+Apr 29, 2019 11:58:33 AM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.SDWSN.Nodes.User cannot be cast to projects.SDWSN.Nodes.Sensor
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:39)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 12:00:58 PM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.SDWSN.Nodes.User cannot be cast to projects.SDWSN.Nodes.Sensor
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:39)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 12:02:03 PM jsensor.Main run
+SEVERE: null
+java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Random.java:388)
+	at projects.SDWSN.Nodes.Sensor.onSense(Sensor.java:59)
+	at projects.SDWSN.Events.VirtualSense.fire(VirtualSense.java:12)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:40)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 2:23:43 PM jsensor.Main run
+SEVERE: null
+java.lang.IllegalArgumentException: bound must be positive
+	at java.util.Random.nextInt(Random.java:388)
+	at projects.SDWSN.Nodes.Sensor.onSense(Sensor.java:59)
+	at projects.SDWSN.Events.VirtualSense.fire(VirtualSense.java:12)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:40)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 2:23:52 PM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.SDWSN.Nodes.User cannot be cast to projects.SDWSN.Nodes.Sensor
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 2:23:57 PM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.SDWSN.Nodes.SubController cannot be cast to projects.SDWSN.Nodes.Sensor
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 3:42:58 PM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.SDWSN.Nodes.User cannot be cast to projects.SDWSN.Nodes.Sensor
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+Apr 29, 2019 3:43:05 PM jsensor.Main run
+SEVERE: null
+java.lang.ClassCastException: projects.SDWSN.Nodes.User cannot be cast to projects.SDWSN.Nodes.Sensor
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+May 14, 2019 1:06:05 PM jsensor.Main run
+SEVERE: null
+java.lang.NullPointerException
+	at projects.SDWSN.Nodes.Controller.test(Controller.java:28)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+May 14, 2019 1:14:20 PM jsensor.Main run
+SEVERE: null
+java.lang.NullPointerException
+	at projects.SDWSN.Nodes.Controller.test(Controller.java:28)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+May 14, 2019 1:18:33 PM jsensor.Main run
+SEVERE: null
+java.lang.NullPointerException
+	at projects.SDWSN.Nodes.Controller.test(Controller.java:28)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+May 14, 2019 1:18:39 PM jsensor.Main run
+SEVERE: null
+java.lang.NullPointerException
+	at projects.SDWSN.Nodes.Sensor.test(Sensor.java:93)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:47)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+
+May 14, 2019 1:19:27 PM jsensor.Main run
+SEVERE: null
+java.lang.NullPointerException
+	at projects.SDWSN.Nodes.Sensor.test(Sensor.java:93)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:47)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+	at jsensor.Main.run(Main.java:162)
+	at jsensor.Main.main(Main.java:78)
+

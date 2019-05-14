@@ -6,16 +6,19 @@ import jsensor.nodes.messages.Message;
 import projects.SDWSN.Events.ServicesReport;
 import projects.SDWSN.Messages.InitControl;
 import projects.SDWSN.Messages.Sense;
+import projects.SDWSN.Service.TypeSense;
 import projects.SDWSN.probability.Dice;
 
 import java.util.LinkedList;
 import java.util.Random;
 
 
-public class Sensor extends Device {
+public class Sensor extends Node {
     private boolean isLive = true;
     private LinkedList<TypeSense> sensors;
-    private Node parent;
+    private LinkedList<TypeSense> messagesIDs;
+    private int parent;
+    private int channel;
 
     @Override
     public void handleMessages(Inbox inbox) {
@@ -27,7 +30,8 @@ public class Sensor extends Device {
 
             if (message instanceof InitControl) {
                 InitControl initControl = (InitControl) message;
-                this.parent = initControl.getNode();
+                this.parent = initControl.getNode().getID();
+                this.channel = parent;
 
                 int time = 1;
 
@@ -44,6 +48,9 @@ public class Sensor extends Device {
     public void onCreation() {
         this.messagesIDs = new LinkedList<>();
         this.sensors = new LinkedList<>();
+        this.channel = -1;
+        this.parent = -1;
+
         int n_sensors = new Random().nextInt(4);
 
         TypeSense[] typeSenses = {TypeSense.TEMPERATURE, TypeSense.PRESSURE,
@@ -55,8 +62,7 @@ public class Sensor extends Device {
     }
 
     public Sense onSense() {
-        return new Sense(new Random().nextDouble(), this.parent)
-                .setType(sensors.get(new Random().nextInt(sensors.size())));
+        return new Sense(new Random().nextDouble(), this.parent);
     }
 
     public boolean isLive() {
@@ -68,16 +74,26 @@ public class Sensor extends Device {
         return this;
     }
 
-    public Node getParent() {
+    public int getParent() {
         return parent;
     }
 
-    public Sensor setParent(Node parent) {
+    public Sensor setParent(int parent) {
         this.parent = parent;
         return this;
     }
 
     public LinkedList<TypeSense> getSensors() {
         return sensors;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public void test() {
+        if (parent == -1) return;
+        System.out.print("Sensor ID: " + getID());
+        System.out.println(" Parent ID: " + parent);
     }
 }

@@ -8,7 +8,7 @@ public class InitSensorParent extends TimerEvent {
     public void fire() {
 
         InitControl initControl = new InitControl(this.node, 0);
-
+//        System.out.println("SubController ID " + this.node.getID() + "  created.");
         this.node.multicast(initControl);
     }
 }

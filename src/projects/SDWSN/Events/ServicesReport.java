@@ -7,8 +7,8 @@ import projects.SDWSN.Nodes.Sensor;
 public class ServicesReport extends TimerEvent {
     @Override
     public void fire() {
-        ServicesReportMessage initControl = new ServicesReportMessage(this.node);
-
-        this.node.multicast(initControl);
+        ServicesReportMessage servicesReportMessage = new ServicesReportMessage(this.node);
+//        System.out.println("Node ID " + this.node.getID() + " created.");
+        this.node.multicast(servicesReportMessage);
     }
 }
