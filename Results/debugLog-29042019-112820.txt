@@ -11,29 +11,29 @@ number Of Chunks: 4
 Mobility: false
 Facts: false
 
-Message Transmission Model: projects.SDWSN.MessageTransmissionModels.ConstantTime
-Sensor: projects.SDWSN.Nodes.Sensor
+Message Transmission Model: projects.SDWSN.messageTransmissionModels.ConstantTime
+Sensor: projects.SDWSN.nodes.Sensor
 Number: 50
-Distribution Model: projects.SDWSN.DistributionModels.RandomDistribution
-Connectivity Model: projects.SDWSN.ConnectivityModels.NodeConectivity
+Distribution Model: projects.SDWSN.distributionModels.RandomDistribution
+Connectivity Model: projects.SDWSN.connectivityModels.NodeConnectivity
 Node Radio: 1
 Communication Radio: 25
-Sensor: projects.SDWSN.Nodes.Controller
+Sensor: projects.SDWSN.nodes.Controller
 Number: 1
-Distribution Model: projects.SDWSN.DistributionModels.RandomDistribution
-Connectivity Model: projects.SDWSN.ConnectivityModels.NodeConectivity
+Distribution Model: projects.SDWSN.distributionModels.RandomDistribution
+Connectivity Model: projects.SDWSN.connectivityModels.NodeConnectivity
 Node Radio: 1
 Communication Radio: 25
-Sensor: projects.SDWSN.Nodes.SubController
+Sensor: projects.SDWSN.nodes.SubController
 Number: 5
-Distribution Model: projects.SDWSN.DistributionModels.RandomDistribution
-Connectivity Model: projects.SDWSN.ConnectivityModels.NodeConectivity
+Distribution Model: projects.SDWSN.distributionModels.RandomDistribution
+Connectivity Model: projects.SDWSN.connectivityModels.NodeConnectivity
 Node Radio: 1
 Communication Radio: 25
-Sensor: projects.SDWSN.Nodes.User
+Sensor: projects.SDWSN.nodes.User
 Number: 10
-Distribution Model: projects.SDWSN.DistributionModels.RandomDistribution
-Connectivity Model: projects.SDWSN.ConnectivityModels.NodeConectivity
+Distribution Model: projects.SDWSN.distributionModels.RandomDistribution
+Connectivity Model: projects.SDWSN.connectivityModels.NodeConnectivity
 Node Radio: 1
 Communication Radio: 25
 -----------------------------

@@ -1,0 +1,228 @@
+-- Time 0 started
+-- Time 0 finished
+-- Time 1 started
+Time 1 - Node 53 - Handling InitSensorParent event
+Time 1 - Node 54 - Handling InitSensorParent event
+Time 1 - Node 55 - Handling InitSensorParent event
+Time 1 - Node 56 - Handling InitSensorParent event
+Time 1 - Node 52 - Handling InitSensorParent event
+-- Time 1 finished
+-- Time 2 started
+Time 2 - Node 53 - Handling SendingEvent event
+Time 2 - Node 37 - Handling SendingEvent event
+Time 2 - Node 56 - Handling SendingEvent event
+Time 2 - Node 55 - Handling SendingEvent event
+Time 2 - Node 54 - Handling SendingEvent event
+Time 2 - Node 52 - Handling SendingEvent event
+Time 2 - Node 10 - Handling SendingEvent event
+Time 2 - Node 39 - Handling SendingEvent event
+Time 2 - Node 32 - Handling SendingEvent event
+Time 2 - Node 35 - Handling SendingEvent event
+Time 2 - Node 7 - Handling SendingEvent event
+-- Time 2 finished
+-- Time 3 started
+Time 3 - Node 53 - Handling SendingEvent event
+Time 3 - Node 21 - Handling SendingEvent event
+Time 3 - Node 9 - Handling SendingEvent event
+Time 3 - Node 54 - Handling SendingEvent event
+Time 3 - Node 30 - Handling SendingEvent event
+Time 3 - Node 6 - Handling SendingEvent event
+Time 3 - Node 55 - Handling SendingEvent event
+Time 3 - Node 56 - Handling SendingEvent event
+Time 3 - Node 3 - Handling SendingEvent event
+Time 3 - Node 52 - Handling SendingEvent event
+-- Time 3 finished
+-- Time 4 started
+Time 4 - Node 45 - Handling SendingEvent event
+Time 4 - Node 38 - Handling SendingEvent event
+Time 4 - Node 20 - Handling SendingEvent event
+Time 4 - Node 5 - Handling SendingEvent event
+Time 4 - Node 1 - Handling SendingEvent event
+-- Time 4 finished
+-- Time 5 started
+Time 5 - Node 21 - Handling SendingEvent event
+Time 5 - Node 36 - Handling SendingEvent event
+Time 5 - Node 13 - Handling SendingEvent event
+Time 5 - Node 28 - Handling SendingEvent event
+Time 5 - Node 16 - Handling SendingEvent event
+-- Time 5 finished
+-- Time 6 started
+Time 6 - Node 9 - Handling SendingEvent event
+Time 6 - Node 42 - Handling SendingEvent event
+Time 6 - Node 39 - Handling SendingEvent event
+Time 6 - Node 26 - Handling SendingEvent event
+Time 6 - Node 2 - Handling SendingEvent event
+-- Time 6 finished
+-- Time 7 started
+Time 7 - Node 50 - Handling SendingEvent event
+Time 7 - Node 44 - Handling SendingEvent event
+Time 7 - Node 30 - Handling SendingEvent event
+Time 7 - Node 20 - Handling SendingEvent event
+Time 7 - Node 8 - Handling SendingEvent event
+-- Time 7 finished
+-- Time 8 started
+Time 8 - Node 45 - Handling SendingEvent event
+Time 8 - Node 33 - Handling SendingEvent event
+Time 8 - Node 17 - Handling SendingEvent event
+Time 8 - Node 5 - Handling SendingEvent event
+Time 8 - Node 19 - Handling SendingEvent event
+Time 8 - Node 12 - Handling SendingEvent event
+-- Time 8 finished
+-- Time 9 started
+Time 9 - Node 22 - Handling SendingEvent event
+Time 9 - Node 49 - Handling SendingEvent event
+Time 9 - Node 14 - Handling SendingEvent event
+Time 9 - Node 45 - Handling SendingEvent event
+Time 9 - Node 43 - Handling SendingEvent event
+Time 9 - Node 12 - Handling SendingEvent event
+-- Time 9 finished
+-- Time 10 started
+Time 10 - Node 29 - Handling SendingEvent event
+Time 10 - Node 6 - Handling SendingEvent event
+Time 10 - Node 25 - Handling SendingEvent event
+Time 10 - Node 44 - Handling SendingEvent event
+Time 10 - Node 40 - Handling SendingEvent event
+-- Time 10 finished
+-- Time 11 started
+Time 11 - Node 22 - Handling SendingEvent event
+Time 11 - Node 44 - Handling SendingEvent event
+Time 11 - Node 24 - Handling SendingEvent event
+Time 11 - Node 20 - Handling SendingEvent event
+-- Time 11 finished
+-- Time 12 started
+Time 12 - Node 49 - Handling SendingEvent event
+Time 12 - Node 31 - Handling SendingEvent event
+Time 12 - Node 24 - Handling SendingEvent event
+Time 12 - Node 42 - Handling SendingEvent event
+Time 12 - Node 23 - Handling SendingEvent event
+Time 12 - Node 30 - Handling SendingEvent event
+-- Time 12 finished
+-- Time 13 started
+Time 13 - Node 13 - Handling SendingEvent event
+Time 13 - Node 38 - Handling SendingEvent event
+Time 13 - Node 9 - Handling SendingEvent event
+Time 13 - Node 31 - Handling SendingEvent event
+Time 13 - Node 44 - Handling SendingEvent event
+Time 13 - Node 14 - Handling SendingEvent event
+-- Time 13 finished
+-- Time 14 started
+Time 14 - Node 45 - Handling SendingEvent event
+Time 14 - Node 44 - Handling SendingEvent event
+Time 14 - Node 19 - Handling SendingEvent event
+Time 14 - Node 3 - Handling SendingEvent event
+Time 14 - Node 40 - Handling SendingEvent event
+Time 14 - Node 32 - Handling SendingEvent event
+Time 14 - Node 24 - Handling SendingEvent event
+-- Time 14 finished
+-- Time 15 started
+Time 15 - Node 45 - Handling SendingEvent event
+Time 15 - Node 21 - Handling SendingEvent event
+Time 15 - Node 15 - Handling SendingEvent event
+Time 15 - Node 40 - Handling SendingEvent event
+Time 15 - Node 32 - Handling SendingEvent event
+Time 15 - Node 20 - Handling SendingEvent event
+-- Time 15 finished
+-- Time 16 started
+Time 16 - Node 17 - Handling SendingEvent event
+Time 16 - Node 23 - Handling SendingEvent event
+Time 16 - Node 19 - Handling SendingEvent event
+-- Time 16 finished
+-- Time 17 started
+Time 17 - Node 30 - Handling SendingEvent event
+Time 17 - Node 33 - Handling SendingEvent event
+Time 17 - Node 47 - Handling SendingEvent event
+Time 17 - Node 48 - Handling SendingEvent event
+Time 17 - Node 27 - Handling SendingEvent event
+-- Time 17 finished
+-- Time 18 started
+Time 18 - Node 37 - Handling SendingEvent event
+Time 18 - Node 34 - Handling SendingEvent event
+Time 18 - Node 7 - Handling SendingEvent event
+Time 18 - Node 5 - Handling SendingEvent event
+Time 18 - Node 28 - Handling SendingEvent event
+Time 18 - Node 8 - Handling SendingEvent event
+-- Time 18 finished
+-- Time 19 started
+Time 19 - Node 49 - Handling SendingEvent event
+Time 19 - Node 6 - Handling SendingEvent event
+Time 19 - Node 31 - Handling SendingEvent event
+Time 19 - Node 41 - Handling SendingEvent event
+Time 19 - Node 48 - Handling SendingEvent event
+Time 19 - Node 37 - Handling SendingEvent event
+Time 19 - Node 33 - Handling SendingEvent event
+Time 19 - Node 4 - Handling SendingEvent event
+Time 19 - Node 25 - Handling SendingEvent event
+Time 19 - Node 9 - Handling SendingEvent event
+-- Time 19 finished
+-- Time 20 started
+Time 20 - Node 29 - Handling SendingEvent event
+Time 20 - Node 38 - Handling SendingEvent event
+Time 20 - Node 9 - Handling SendingEvent event
+Time 20 - Node 1 - Handling SendingEvent event
+Time 20 - Node 6 - Handling SendingEvent event
+-- Time 20 finished
+-- Time 21 started
+Time 21 - Node 49 - Handling SendingEvent event
+Time 21 - Node 25 - Handling SendingEvent event
+Time 21 - Node 43 - Handling SendingEvent event
+Time 21 - Node 24 - Handling SendingEvent event
+Time 21 - Node 31 - Handling SendingEvent event
+Time 21 - Node 27 - Handling SendingEvent event
+Time 21 - Node 20 - Handling SendingEvent event
+-- Time 21 finished
+-- Time 22 started
+Time 22 - Node 49 - Handling SendingEvent event
+Time 22 - Node 37 - Handling SendingEvent event
+Time 22 - Node 26 - Handling SendingEvent event
+Time 22 - Node 44 - Handling SendingEvent event
+Time 22 - Node 3 - Handling SendingEvent event
+Time 22 - Node 28 - Handling SendingEvent event
+-- Time 22 finished
+-- Time 23 started
+Time 23 - Node 10 - Handling SendingEvent event
+Time 23 - Node 31 - Handling SendingEvent event
+Time 23 - Node 32 - Handling SendingEvent event
+-- Time 23 finished
+-- Time 24 started
+Time 24 - Node 43 - Handling SendingEvent event
+Time 24 - Node 42 - Handling SendingEvent event
+Time 24 - Node 6 - Handling SendingEvent event
+Time 24 - Node 48 - Handling SendingEvent event
+Time 24 - Node 12 - Handling SendingEvent event
+Time 24 - Node 8 - Handling SendingEvent event
+-- Time 24 finished
+-- Time 25 started
+Time 25 - Node 5 - Handling SendingEvent event
+Time 25 - Node 38 - Handling SendingEvent event
+Time 25 - Node 7 - Handling SendingEvent event
+Time 25 - Node 6 - Handling SendingEvent event
+Time 25 - Node 8 - Handling SendingEvent event
+-- Time 25 finished
+-- Time 26 started
+Time 26 - Node 41 - Handling SendingEvent event
+Time 26 - Node 1 - Handling SendingEvent event
+Time 26 - Node 23 - Handling SendingEvent event
+Time 26 - Node 20 - Handling SendingEvent event
+Time 26 - Node 18 - Handling SendingEvent event
+Time 26 - Node 10 - Handling SendingEvent event
+-- Time 26 finished
+-- Time 27 started
+Time 27 - Node 13 - Handling SendingEvent event
+Time 27 - Node 42 - Handling SendingEvent event
+Time 27 - Node 27 - Handling SendingEvent event
+Time 27 - Node 15 - Handling SendingEvent event
+Time 27 - Node 30 - Handling SendingEvent event
+Time 27 - Node 7 - Handling SendingEvent event
+Time 27 - Node 26 - Handling SendingEvent event
+Time 27 - Node 6 - Handling SendingEvent event
+-- Time 27 finished
+-- Time 28 started
+Time 28 - Node 33 - Handling SendingEvent event
+Time 28 - Node 35 - Handling SendingEvent event
+Time 28 - Node 46 - Handling SendingEvent event
+Time 28 - Node 12 - Handling SendingEvent event
+Time 28 - Node 26 - Handling SendingEvent event
+-- Time 28 finished
+-- Time 29 started
+Time 29 - Node 13 - Handling SendingEvent event
+-- Time 29 finished
