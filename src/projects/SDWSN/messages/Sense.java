@@ -1,6 +1,7 @@
 package projects.SDWSN.messages;
 
 import jsensor.nodes.messages.Message;
+import jsensor.runtime.Jsensor;
 import projects.SDWSN.service.TypeSense;
 
 
@@ -24,6 +25,7 @@ public class Sense extends Message {
 
 
     public Sense(double read, int sender) {
+        super(Jsensor.getNodeByID(sender).getChunk());
         this.setHops(hops)
                 .setRead(read)
                 .setSender(sender);
@@ -81,6 +83,12 @@ public class Sense extends Message {
     public Sense setType(TypeSense type) {
         this.type = type;
         return this;
+    }
+
+
+    @Override
+    public String toString() {
+        return "SubController ID: " + destination + "from: " + sender + "\tread: " + read;
     }
 
     @Override

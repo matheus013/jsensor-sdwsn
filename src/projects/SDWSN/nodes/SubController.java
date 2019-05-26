@@ -4,10 +4,12 @@ import jsensor.nodes.Node;
 import jsensor.nodes.messages.Inbox;
 import jsensor.nodes.messages.Message;
 import jsensor.runtime.Jsensor;
+import projects.SDWSN.messages.Sense;
 import projects.SDWSN.messages.ServicesReportMessage;
 import projects.SDWSN.service.ServiceSensor;
 import projects.SDWSN.service.TypeSense;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 
 import static projects.SDWSN.statics.EnumSingleton.environments;
@@ -18,6 +20,8 @@ public class SubController extends Node {
     private LinkedList<Integer> sensorsIDs;
     private LinkedList<ServiceSensor> services;
     private LinkedList<Long> messagesIDs;
+    private HashMap<Integer, Double> lastRead;
+    private Node parent;
 
     @Override
     public synchronized void handleMessages(Inbox inbox) {
@@ -41,6 +45,11 @@ public class SubController extends Node {
                     services.add(new ServiceSensor(i, sensor.getID(), environments[this.getID()]));
                 }
             }
+            if (message instanceof Sense) {
+                Sense sense = (Sense) message;
+//                System.out.println(sense);
+                lastRead.put(sense.getSender(), sense.getRead());
+            }
         }
     }
 
@@ -50,12 +59,12 @@ public class SubController extends Node {
         sensorsIDs = new LinkedList<>();
         messagesIDs = new LinkedList<>();
         services = new LinkedList<>();
+        lastRead = new HashMap<>();
 
         findSensors();
     }
 
     public void test() {
-        System.out.println("SubController ID: " + getID());
         if (sensorsIDs.isEmpty()) System.out.println("\tEmpty sensors");
         for (Integer i : sensorsIDs) {
             System.out.println("\tSensor ID: " + i);
@@ -63,13 +72,13 @@ public class SubController extends Node {
     }
 
     private synchronized void findSensors() {
-        if (sensorsIDs.size() >= 10)
-            return;
+        int ref = this.getID() % 10 - 1;
         if (!this.getNeighbours().getNodesList().isEmpty()) {
             for (Node node : this.getNeighbours().getNodesList()) {
-                if (!sensorsIDs.contains(node.getID())
+                if (node.getID() > ref * 10 && node.getID() <= ref * 10 + 10
                         && node instanceof Sensor
-                        && ((Sensor) node).getParent() == -1) {
+                        && !sensorsIDs.contains(node.getID())
+                        && ((Sensor) node).isLive()) {
                     sensorsIDs.add(node.getID());
                     ((Sensor) node).setParent(this.getID());
                 }
@@ -77,5 +86,12 @@ public class SubController extends Node {
         }
     }
 
+    public Node getParent() {
+        return parent;
+    }
 
+    public SubController setParent(Node parent) {
+        this.parent = parent;
+        return this;
+    }
 }

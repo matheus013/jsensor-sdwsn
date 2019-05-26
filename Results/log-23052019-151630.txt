@@ -1,7 +1,0 @@
--- Time 0 started
--- Time 0 finished
--- Time 1 started
-Time 1 - Node 51 - Handling FloodingTimer event
--- Time 1 finished
--- Time 2 started
--- Time 2 finished

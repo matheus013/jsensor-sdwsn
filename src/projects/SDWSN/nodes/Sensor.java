@@ -48,7 +48,7 @@ public class Sensor extends Node {
     }
 
     public Sense onSense() {
-        return new Sense(new Random().nextDouble(), this.parent);
+        return new Sense(new Random().nextDouble(), this.getID()).setDestination(parent);
     }
 
     public boolean isLive() {

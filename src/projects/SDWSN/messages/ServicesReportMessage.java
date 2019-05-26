@@ -13,11 +13,11 @@ public class ServicesReportMessage extends Message {
     private int sender;
 
     public ServicesReportMessage(Node node) {
-        if (node instanceof Sensor) {
-            Sensor sensor = (Sensor) node;
-            this.destination = sensor.getParent();
-            this.typeSenses = sensor.getSensors();
-        }
+        super(node.getChunk());
+        Sensor sensor = (Sensor) node;
+        this.destination = sensor.getParent();
+        this.typeSenses = sensor.getSensors();
+
     }
 
     public ServicesReportMessage(int sender, int destination, LinkedList<TypeSense> typeSenses, long id) {

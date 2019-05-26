@@ -3,6 +3,7 @@ package projects.SDWSN.nodes;
 import jsensor.nodes.Node;
 import jsensor.nodes.messages.Inbox;
 import jsensor.nodes.messages.Message;
+import jsensor.runtime.Jsensor;
 import projects.SDWSN.events.FloodingTimer;
 import projects.SDWSN.messages.Sense;
 
@@ -25,13 +26,7 @@ public class Controller extends Node {
             messagesIDs.add(message.getID());
 
             if (message instanceof Sense) {
-                Sense senseMessage = (Sense) message;
 
-                System.out.println(senseMessage.getID());
-
-                soIDs.add(senseMessage.getSender());
-
-                System.out.println("SO " + senseMessage.getSender() + " linked to network");
             }
         }
     }
@@ -51,15 +46,21 @@ public class Controller extends Node {
         System.out.println("Controller ID: " + getID());
         if (soIDs.isEmpty()) System.out.println("\tEmpty sub controllers");
         for (Integer i : soIDs) {
-            System.out.println("\tSubController ID: " + i);
+            System.out.println("\t" + Jsensor.getNodeByID(i).getClass().getSimpleName() + " ID: " + i);
         }
     }
 
     public synchronized void findController() {
         if (!this.getNeighbours().getNodesList().isEmpty()) {
             for (Node node : this.getNeighbours().getNodesList()) {
-                if (!soIDs.contains(node.getID()))
+                if (!soIDs.contains(node.getID())) {
                     soIDs.add(node.getID());
+                    if (node instanceof User) {
+                        ((User) node).setParent(this);
+                    } else if (node instanceof SubController) {
+                        ((SubController) node).setParent(this);
+                    }
+                }
             }
         }
     }
