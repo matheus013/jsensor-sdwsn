@@ -4,8 +4,10 @@ import jsensor.nodes.Node;
 import jsensor.nodes.messages.Inbox;
 import jsensor.nodes.messages.Message;
 import jsensor.runtime.Jsensor;
+import projects.SDWSN.messages.Request;
 import projects.SDWSN.messages.Sense;
 import projects.SDWSN.messages.ServicesReportMessage;
+import projects.SDWSN.service.Service;
 import projects.SDWSN.service.ServiceSensor;
 import projects.SDWSN.service.TypeSense;
 
@@ -47,8 +49,30 @@ public class SubController extends Node {
             }
             if (message instanceof Sense) {
                 Sense sense = (Sense) message;
-//                System.out.println(sense);
                 lastRead.put(sense.getSender(), sense.getRead());
+            }
+
+            if (message instanceof Request) {
+                Request request = (Request) message;
+                Service service = request.getService();
+
+                switch (((ServiceSensor) service).getAction()) {
+                    case UP:
+                        service.increase();
+                        break;
+                    case DOWN:
+                        service.decrease();
+                        break;
+                    case OFF:
+                        service.turnOff();
+                        break;
+                    case ON:
+                        service.turnOn();
+                        break;
+                    case GET:
+                        service.getValue();
+                        break;
+                }
             }
         }
     }
@@ -90,8 +114,7 @@ public class SubController extends Node {
         return parent;
     }
 
-    public SubController setParent(Node parent) {
+    public void setParent(Node parent) {
         this.parent = parent;
-        return this;
     }
 }

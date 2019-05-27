@@ -6,12 +6,24 @@ public class ServiceSensor implements Service<Double> {
     private TypeSense typeSensor;
     private int actuator;
     private Ambient ambient;
+    private Action action;
+    private int duration;
 
-    public ServiceSensor(TypeSense typeSensor, int id, Ambient ambient) {
-        setActuator(id);
+    public ServiceSensor(TypeSense typeSensor, int actuator, Ambient ambient) {
+        setActuator(actuator);
         setTypeSensor(typeSensor);
         setAmbient(ambient);
+        setDuration(10);
     }
+
+    public ServiceSensor(Ambient ambient, TypeSense typeSensor, Action action){
+        setAmbient(ambient);
+        setAction(action);
+        setTypeSensor(typeSensor);
+        setDuration(10);
+    }
+
+
 
     public TypeSense getTypeSensor() {
         return typeSensor;
@@ -37,6 +49,15 @@ public class ServiceSensor implements Service<Double> {
 
     public ServiceSensor setAmbient(Ambient ambient) {
         this.ambient = ambient;
+        return this;
+    }
+
+    public Action getAction() {
+        return action;
+    }
+
+    public ServiceSensor setAction(Action action) {
+        this.action = action;
         return this;
     }
 
@@ -78,5 +99,14 @@ public class ServiceSensor implements Service<Double> {
     @Override
     public void setValue(Double value) {
         this.value = value;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public ServiceSensor setDuration(int duration) {
+        this.duration = duration;
+        return this;
     }
 }

@@ -40,6 +40,7 @@ public class User extends Node {
 
 
     public Request onRequest() {
-        return new Request(parent, EnumSingleton.environments[new Random().nextInt(5)], "");
+        return new Request(this, EnumSingleton.environments[new Random().nextInt(5)],
+                EnumSingleton.actions[new Random().nextInt(5)]);
     }
 }
