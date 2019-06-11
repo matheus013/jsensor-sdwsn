@@ -2,18 +2,143 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af56101d-fb16-43f2-b893-b52e8ba16cd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/projects/SDWSN/events/OrcRequestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/projects/SDWSN/service/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_json_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/SDWSN/log/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/SDWSN/log/LogJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/SDWSN/messages/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/projects/SDWSN/service/ServiceAggregation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-23052019-182453.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-23052019-182545.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-23052019-182637.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104036.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104053.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104415.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104547.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-104714.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105021.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105212.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105238.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105354.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105442.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-105712.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110132.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110232.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110307.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110352.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110406.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110440.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110517.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110636.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110717.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110740.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-110818.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-111140.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-111322.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-111701.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-26052019-111805.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-27052019-112501.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/debugLog-27052019-113755.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-23052019-182453.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-23052019-182545.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-23052019-182637.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104036.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104053.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104415.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104547.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-104714.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105021.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105212.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105238.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105354.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105442.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-105712.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110132.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110232.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110307.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110352.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110406.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110440.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110517.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110636.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110717.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110740.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-110818.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-111140.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-111322.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-111701.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-26052019-111805.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-27052019-112501.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/log-27052019-113755.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-23052019-182453.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-23052019-182545.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-23052019-182637.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104036.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104053.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104136.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104415.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104547.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-104714.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105021.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105119.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105212.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105238.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105354.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105442.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-105712.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110132.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110232.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110307.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110352.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110406.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110440.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110517.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110636.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110704.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110717.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110740.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-110818.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-111140.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-111322.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-111701.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-26052019-111805.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-27052019-112501.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/userLog-27052019-113755.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulatorWSN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimulatorWSN.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/META-INF/SimulatorWSN.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/CustomGlobal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/CustomGlobal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Nodes/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Nodes/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Nodes/SubController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Nodes/SubController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Nodes/SubController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Nodes/SubController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/SDWSN.config" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/SDWSN.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Service/ServiceSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Service/ServiceSensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Service/TypeSense.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/Service/TypeSense.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/connectivityModels/NodeConnectivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SimulatorWSN/projects/SDWSN/connectivityModels/NodeConnectivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/events/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/events/UserRequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/SDWSN.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/SDWSN.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/nodes/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/nodes/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/nodes/SubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/nodes/SubController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/service/Ambient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/service/Ambient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/service/ServiceSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/service/ServiceSensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/statics/EnumSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/statics/EnumSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/SDWSN/service/TypeSense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/SDWSN/service/TypeSense.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,25 +150,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/SubController.java">
+        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/UserRequestService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="135">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3845#3846#0" expanded="true" />
-                <element signature="e#3932#3933#0" expanded="true" />
-                <element signature="e#3968#3969#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -51,10 +164,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/Sensor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,23 +191,50 @@
         <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/UserRequestService.java">
+        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="62" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="62" />
+            <state relative-caret-position="105">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,26 +243,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="131" column="57" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
+            <state relative-caret-position="418">
+              <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3183#3184#0" expanded="true" />
+                <element signature="e#3403#3404#0" expanded="true" />
+                <element signature="e#3438#3439#0" expanded="true" />
+                <element signature="e#5558#5559#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/OrcRequestService.java">
+        <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/Main.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="150" selection-start-line="150" selection-end-line="150" />
             </state>
           </provider>
         </entry>
@@ -116,48 +267,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/ServiceSensor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="390">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding>
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
-                <element signature="e#2088#2089#0" expanded="true" />
-                <element signature="e#2119#2120#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/TypeSense.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#987#988#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#2384#2385#0" expanded="true" />
+                <element signature="e#2422#2423#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,6 +294,8 @@
       <find>node</find>
       <find>neighbours</find>
       <find>parent</find>
+      <find>ou</find>
+      <find>find</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -195,14 +311,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Timers/SensorInit.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Timers/InitSensorParent.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Events/Timer.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Service/TypeActuator.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Service/ActionActuator.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Service/Ambient.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Service/Service.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/Service/ServiceSensor.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/enumSingleton/EnumSingleton.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/Messages/Request.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/Nodes/User.java" />
@@ -227,9 +335,7 @@
         <option value="$PROJECT_DIR$/src/projects/SDWSN/messageTransmissionModels/ConstantTime.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/distributionModels/RandomDistribution.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/events/UniqueTimer.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/events/ServicesReport.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/SDWSN.config" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/events/VirtualSense.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/nodes/Sensor.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/messages/Sense.java" />
@@ -238,22 +344,32 @@
         <option value="$PROJECT_DIR$/src/projects/SDWSN/statics/EnumSingleton.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/events/RequestService.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/events/UserRequestService.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/events/OrcRequestService.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/service/Ambient.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java" />
-        <option value="$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/service/TypeSense.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/service/ServiceAgregation.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/service/ServiceAggregation.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/read/UtilJosn.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/log/Log.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/log/LogJson.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/read/UtilJson.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/nodes/SubController.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/messages/Response.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/service/ServiceSensor.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/SDWSN.config" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java" />
         <option value="$PROJECT_DIR$/src/projects/SDWSN/nodes/Controller.java" />
+        <option value="$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="-252" />
     <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,6 +377,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,12 +406,6 @@
               <item name="SimulatorWSN" type="616d4139:PackageViewModuleNode" />
               <item name="projects.SDWSN" type="1f31426a:PackageElementNode" />
               <item name="connectivityModels" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="SimulatorWSN" type="58d84e3e:PackageViewProjectNode" />
-              <item name="SimulatorWSN" type="616d4139:PackageViewModuleNode" />
-              <item name="projects.SDWSN" type="1f31426a:PackageElementNode" />
-              <item name="distributionModels" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="SimulatorWSN" type="58d84e3e:PackageViewProjectNode" />
@@ -330,7 +441,7 @@
               <item name="SimulatorWSN" type="58d84e3e:PackageViewProjectNode" />
               <item name="SimulatorWSN" type="616d4139:PackageViewModuleNode" />
               <item name="projects.SDWSN" type="1f31426a:PackageElementNode" />
-              <item name="reliabilityModels" type="1f31426a:PackageElementNode" />
+              <item name="read" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="SimulatorWSN" type="58d84e3e:PackageViewProjectNode" />
@@ -338,26 +449,19 @@
               <item name="projects.SDWSN" type="1f31426a:PackageElementNode" />
               <item name="service" type="1f31426a:PackageElementNode" />
             </path>
-            <path>
-              <item name="SimulatorWSN" type="58d84e3e:PackageViewProjectNode" />
-              <item name="SimulatorWSN" type="616d4139:PackageViewModuleNode" />
-              <item name="projects.SDWSN" type="1f31426a:PackageElementNode" />
-              <item name="statics" type="1f31426a:PackageElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558982101205" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560280075941" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -444,12 +548,17 @@
       <workItem from="1557786343135" duration="17107000" />
       <workItem from="1558380278860" duration="12605000" />
       <workItem from="1558631562204" duration="13790000" />
-      <workItem from="1558877855442" duration="12779000" />
+      <workItem from="1558877855442" duration="18508000" />
+      <workItem from="1559234322037" duration="1615000" />
+      <workItem from="1559658726391" duration="1088000" />
+      <workItem from="1559661489253" duration="851000" />
+      <workItem from="1559845794931" duration="2222000" />
+      <workItem from="1546301030180" duration="9319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102798000" />
+    <option name="totallyTimeSpent" value="123622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,10 +570,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-252" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="-252" y="-1080" width="954" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09211928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29385966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -472,17 +581,17 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
-      <window_info anchor="bottom" auto_hide="true" x="0" y="0" width="1280" height="800" id="Run" order="2" weight="0.3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.22871287" />
+      <window_info anchor="bottom" auto_hide="true" x="0" y="0" width="1280" height="800" id="Run" order="2" sideWeight="0.4951535" weight="0.42574257" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49757674" weight="0.3990099" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871288" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970297" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49919224" weight="0.32909605" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23663366" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.23587571" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5048465" side_tool="true" weight="0.23587571" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32871288" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32876712" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32876712" />
@@ -497,7 +606,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09211928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3473344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,16 +614,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
-      <window_info anchor="bottom" auto_hide="true" x="0" y="0" width="1280" height="800" id="Run" order="2" weight="0.95753425" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32627118" />
+      <window_info anchor="bottom" auto_hide="true" x="0" y="0" width="1280" height="800" id="Run" order="2" weight="0.42655367" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871288" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23663366" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23587571" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32871288" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32876712" />
@@ -545,6 +654,12 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/projects/SDWSN/nodes/Controller.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -559,55 +674,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/concurrent/AbstractExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="e#2990#2991#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/concurrent/ExecutorCompletionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="254" column="16" selection-start-line="254" selection-start-column="16" selection-end-line="254" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/Messages/Control.java" />
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/ConnectivityModels/RouterTree.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/models/ReliabilityModel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/utils/Position.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/FailDetect/CustomGlobal.java" />
-    <entry file="file://$PROJECT_DIR$/src/projects/FailDetect/Messages/ChoreographyMessage.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/runtime/threads/AssynchronousConsumerCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/events/TimerEvent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -630,13 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/runtime/AssynchronousRuntime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -667,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/FloodingTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/reliabilityModels/ReliableDelivery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -682,83 +734,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/ActionActuator.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/collections/ConcurrentNodesPositionHashMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="364" selection-start-line="364" selection-end-line="364" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/ServicesReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/Node.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-          <folding>
-            <element signature="e#2349#2350#0" expanded="true" />
-            <element signature="e#2383#2384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/Sensor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/ServicesReportMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/VirtualSense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="85" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Sense.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-229">
@@ -778,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/SDWSN.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/statics/EnumSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -795,10 +763,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12624">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/OrcRequestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/ServiceAggregation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/TypeSense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/FloodingTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/ServicesReportMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/ServicesReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/log/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/log/LogJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/models/ConnectivityModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="177" column="28" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/collections/ConcurrentNodesPositionHashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="364" selection-start-line="364" selection-end-line="364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/collections/AbstractNodesList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/nodes/Node.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1283">
+          <caret line="220" column="28" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
+          <folding>
+            <element signature="e#6049#6050#0" expanded="true" />
+            <element signature="e#6087#6088#0" expanded="true" />
+            <element signature="e#6150#6151#0" expanded="true" />
+            <element signature="e#6194#6195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/read/UtilJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/SubController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4057#4058#0" expanded="true" />
+            <element signature="e#4111#4112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -813,78 +937,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/OrcRequestService.java">
+    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/runtime/AssynchronousRuntime.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="267">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/TypeSense.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="216" column="6" selection-start-line="216" selection-start-column="6" selection-end-line="216" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java">
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/UserRequestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/SubController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3845#3846#0" expanded="true" />
-            <element signature="e#3932#3933#0" expanded="true" />
-            <element signature="e#3968#3969#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -893,28 +963,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/ServiceSensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="390">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#2088#2089#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="e#2422#2423#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/service/Service.java">
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/Sensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="552">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/UserRequestService.java">
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/SDWSN.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="62" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="62" />
+        <state relative-caret-position="60">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/events/VirtualSense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="85" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JSensor.jar!/jsensor/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/CustomGlobal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/messages/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/connectivityModels/NodeConnectivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -923,11 +1065,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/projects/SDWSN/nodes/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="131" column="57" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
+        <state relative-caret-position="418">
+          <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3183#3184#0" expanded="true" />
+            <element signature="e#3403#3404#0" expanded="true" />
+            <element signature="e#3438#3439#0" expanded="true" />
+            <element signature="e#5558#5559#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -997,7 +1141,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>JSensor</last-edited>
+          <last-edited>javax.json-1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

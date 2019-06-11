@@ -17,7 +17,7 @@ import java.util.LinkedList;
 import static projects.SDWSN.statics.EnumSingleton.environments;
 
 public class SubController extends Node {
-
+    private int lastCountMessages = 0;
 
     private LinkedList<Integer> sensorsIDs;
     private LinkedList<ServiceSensor> services;
@@ -89,6 +89,7 @@ public class SubController extends Node {
     }
 
     public void test() {
+        System.out.println("SubController ID: " + getID());
         if (sensorsIDs.isEmpty()) System.out.println("\tEmpty sensors");
         for (Integer i : sensorsIDs) {
             System.out.println("\tSensor ID: " + i);
@@ -116,5 +117,9 @@ public class SubController extends Node {
 
     public void setParent(Node parent) {
         this.parent = parent;
+    }
+
+    public void updateMessages() {
+        lastCountMessages = messagesIDs.size();
     }
 }

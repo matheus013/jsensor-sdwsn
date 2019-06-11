@@ -15,6 +15,9 @@ import projects.SDWSN.service.ServiceSensor;
 import projects.SDWSN.service.TypeSense;
 import projects.SDWSN.statics.EnumSingleton;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -22,7 +25,9 @@ import java.util.Queue;
 
 
 public class Controller extends Node {
-
+    private int taskConflict = 0;
+    private int lastCountMessages = 0;
+    private int invalidRequest = 0;
     private LinkedList<Integer> soIDs;
     private LinkedList<Long> messagesIDs;
     private Queue<Service> taskQueue;
@@ -55,8 +60,8 @@ public class Controller extends Node {
         taskQueue = new LinkedList<>();
         lock = new HashMap<>();
         timeLock = new HashMap<>();
+        durationLock = new HashMap<>();
         currentTime = 0;
-
         findController();
         FloodingTimer ft = new FloodingTimer();
         ft.startRelative(1, this);
@@ -76,11 +81,12 @@ public class Controller extends Node {
         if (!this.getNeighbours().getNodesList().isEmpty()) {
             for (Node node : this.getNeighbours().getNodesList()) {
                 if (!soIDs.contains(node.getID())) {
-                    soIDs.add(node.getID());
                     if (node instanceof User) {
                         ((User) node).setParent(this);
+                        soIDs.add(node.getID());
                     } else if (node instanceof SubController) {
                         ((SubController) node).setParent(this);
+                        soIDs.add(node.getID());
                     }
                 }
             }
@@ -112,19 +118,38 @@ public class Controller extends Node {
 
     public void run() {
         currentTime++;
-        if (taskQueue.isEmpty())
-            return;
         for (int i = 0; i < 4; i++) {
-            ServiceSensor service = (ServiceSensor) taskQueue.peek();
+            if (taskQueue.isEmpty())
+                break;
+
+            ServiceSensor service = (ServiceSensor) taskQueue.poll();
+            System.out.println(service);
             assert service != null;
             int responsible = getResponsible(service.getAmbient());
-            if (responsible == -1)
+            System.out.println("responsible: " + responsible);
+            if (responsible == -1) {
+                invalidRequest++;
                 continue;
+            }
             Pair<Integer, TypeSense> pairID = new Pair<>(responsible, service.getTypeSensor());
-            int time = timeLock.get(pairID);
+
+            if (pairID.getValue() == TypeSense.INVALID) {
+                invalidRequest++;
+                continue;
+            }
+
+            int time;
+            if (!timeLock.containsKey(pairID)) {
+                timeLock.put(pairID, 0);
+                durationLock.put(pairID, service.getDuration());
+                lock.put(pairID, false);
+            }
+            time = timeLock.get(pairID);
+
             if (currentTime - time >= durationLock.get(pairID))
                 unlock(pairID);
-            if (isLocking(pairID)) {
+            System.out.println(pairID);
+            if (!isLocking(pairID)) {
                 OrcRequestService orcRequestService = new OrcRequestService();
                 orcRequestService.setRequest(new Request(service).setSlaveID(responsible));
                 lock(new Pair<>(responsible, service.getTypeSensor()));
@@ -132,9 +157,24 @@ public class Controller extends Node {
                 durationLock.put(pairID, service.getDuration());
             } else {
                 taskQueue.add(service);
+                taskConflict++;
             }
 
         }
+    }
+
+    public void updateMessages() {
+        lastCountMessages = messagesIDs.size();
+    }
+
+    public JsonObject toJsonObject() {
+        JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+        return jsonObjectBuilder
+                .add("tasksInQueue", taskQueue.size())
+                .add("taskConflict", taskConflict)
+                .add("receivedMessages", lastCountMessages)
+                .add("invalidRequest", invalidRequest)
+                .build();
     }
 
 }

@@ -11,6 +11,7 @@ import projects.SDWSN.nodes.User;
 public class NodeConnectivity extends ConnectivityModel {
     @Override
     public synchronized boolean isConnected(Node from, Node to) {
+//        return true;
         if (from instanceof Controller && to instanceof SubController ||
                 to instanceof Controller && from instanceof SubController) return true;
 
@@ -23,7 +24,7 @@ public class NodeConnectivity extends ConnectivityModel {
 
     @Override
     public boolean isNear(Node from, Node to) {
-        return isConnected(from, to);
+        return true;
     }
 
 }

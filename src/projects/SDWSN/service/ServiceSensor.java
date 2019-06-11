@@ -16,7 +16,7 @@ public class ServiceSensor implements Service<Double> {
         setDuration(10);
     }
 
-    public ServiceSensor(Ambient ambient, TypeSense typeSensor, Action action){
+    public ServiceSensor(Ambient ambient, TypeSense typeSensor, Action action) {
         setAmbient(ambient);
         setAction(action);
         setTypeSensor(typeSensor);
@@ -24,8 +24,8 @@ public class ServiceSensor implements Service<Double> {
     }
 
 
-
     public TypeSense getTypeSensor() {
+        if (typeSensor == null) return TypeSense.INVALID;
         return typeSensor;
     }
 
@@ -108,5 +108,10 @@ public class ServiceSensor implements Service<Double> {
     public ServiceSensor setDuration(int duration) {
         this.duration = duration;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return actuator + ":" + ambient.getValue();
     }
 }

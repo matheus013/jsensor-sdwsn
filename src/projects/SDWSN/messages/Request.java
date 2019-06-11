@@ -24,6 +24,15 @@ public class Request extends Message {
 
     }
 
+    public Request(Node user, Ambient ambient, Action command, TypeSense typeSense) {
+        super(user.getChunk());
+        this.user = user;
+        this.ambient = ambient;
+        this.command = command;
+        this.typeSense = typeSense;
+
+    }
+
     Request(Node user, Ambient ambient, Action command, long id) {
         this.user = user;
         this.ambient = ambient;

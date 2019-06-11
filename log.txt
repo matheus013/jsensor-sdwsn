@@ -1,648 +1,85 @@
-Feb 21, 2019 1:11:10 PM jsensor.Main run
+Jun 11, 2019 2:19:37 PM jsensor.Main run
 SEVERE: null
-java.lang.ClassCastException: projects.FailDetect.Nodes.ControllerNode cannot be cast to projects.FailDetect.Nodes.SensorNode
-	at projects.FailDetect.fault.ChangeStatus.next(ChangeStatus.java:18)
-	at projects.FailDetect.CustomGlobal.preRound(CustomGlobal.java:40)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
+javax.json.stream.JsonParsingException: Invalid token EOF at (line no=1, column no=1, offset=0), Expected Tokens [CURLYOPEN, SQUAREOPEN]
+	at org.glassfish.json.JsonParserImpl$Context.getTransition(JsonParserImpl.java:266)
+	at org.glassfish.json.JsonParserImpl$StateIterator.next(JsonParserImpl.java:184)
+	at org.glassfish.json.JsonParserImpl.next(JsonParserImpl.java:151)
+	at org.glassfish.json.JsonReaderImpl.read(JsonReaderImpl.java:87)
+	at projects.SDWSN.read.UtilJson.getJsonArrayFromFile(UtilJson.java:21)
+	at projects.SDWSN.log.Log.add(Log.java:42)
+	at projects.SDWSN.log.LogJson.log(LogJson.java:14)
+	at projects.SDWSN.CustomGlobal.postRound(CustomGlobal.java:61)
+	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:242)
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
 
-Apr 29, 2019 11:58:33 AM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.User cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:39)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 12:00:58 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.User cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:39)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 12:02:03 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at projects.SDWSN.nodes.Sensor.onSense(Sensor.java:59)
-	at projects.SDWSN.events.VirtualSense.fire(VirtualSense.java:12)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:40)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 2:23:43 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at projects.SDWSN.nodes.Sensor.onSense(Sensor.java:59)
-	at projects.SDWSN.events.VirtualSense.fire(VirtualSense.java:12)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:40)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 2:23:52 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.User cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 2:23:57 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.SubController cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 3:42:58 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.User cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-Apr 29, 2019 3:43:05 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.User cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:33)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 14, 2019 1:06:05 PM jsensor.Main run
+Jun 11, 2019 3:58:47 PM jsensor.Main run
 SEVERE: null
 java.lang.NullPointerException
-	at projects.SDWSN.nodes.Controller.test(Controller.java:28)
+	at projects.SDWSN.nodes.Controller.run(Controller.java:139)
 	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
 	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
 
-May 14, 2019 1:14:20 PM jsensor.Main run
+Jun 11, 2019 4:01:02 PM jsensor.Main run
 SEVERE: null
 java.lang.NullPointerException
-	at projects.SDWSN.nodes.Controller.test(Controller.java:28)
+	at projects.SDWSN.nodes.Controller.run(Controller.java:139)
 	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
 	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
 
-May 14, 2019 1:18:33 PM jsensor.Main run
+Jun 11, 2019 4:02:25 PM jsensor.Main run
 SEVERE: null
 java.lang.NullPointerException
-	at projects.SDWSN.nodes.Controller.test(Controller.java:28)
+	at projects.SDWSN.nodes.Controller.run(Controller.java:144)
 	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
 	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
 
-May 14, 2019 1:18:39 PM jsensor.Main run
+Jun 11, 2019 4:04:58 PM jsensor.Main run
 SEVERE: null
 java.lang.NullPointerException
-	at projects.SDWSN.nodes.Sensor.test(Sensor.java:93)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:47)
+	at projects.SDWSN.nodes.Controller.run(Controller.java:144)
+	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
 	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
 
-May 14, 2019 1:19:27 PM jsensor.Main run
+Jun 11, 2019 4:05:50 PM jsensor.Main run
 SEVERE: null
 java.lang.NullPointerException
-	at projects.SDWSN.nodes.Sensor.test(Sensor.java:93)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:47)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 16, 2019 1:50:51 PM jsensor.Main argsParser
-SEVERE: null
-java.lang.NumberFormatException: For input string: "1 "
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at jsensor.Main.argsParser(Main.java:594)
-	at jsensor.Main.run(Main.java:110)
-	at jsensor.Main.main(Main.java:78)
-
-May 16, 2019 1:51:09 PM jsensor.Main argsParser
-SEVERE: null
-java.lang.NumberFormatException: For input string: "1 "
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:580)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at jsensor.Main.argsParser(Main.java:594)
-	at jsensor.Main.run(Main.java:110)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 5:53:33 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 5:54:36 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 5:55:23 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 5:55:35 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 5:57:16 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 5:58:47 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-
-May 20, 2019 6:45:46 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 3:35:10 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 3:35:40 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 3:36:10 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 3:45:31 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 4:58:57 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 4:59:13 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 5:02:48 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 5:03:35 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 5:09:40 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 5:09:45 PM jsensor.Main run
-SEVERE: null
-java.util.NoSuchElementException
-	at it.unimi.dsi.fastutil.ints.IntRBTreeSet.firstInt(IntRBTreeSet.java:1082)
-	at jsensor.nodes.events.EventTimeQueue.getFirst(EventTimeQueue.java:23)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:62)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 21, 2019 6:51:15 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.nodes.SubController.onCreation(SubController.java:59)
-	at jsensor.Main.run(Main.java:143)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 2:14:58 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.nodes.SubController.onCreation(SubController.java:59)
-	at jsensor.Main.run(Main.java:143)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:02:09 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
+	at projects.SDWSN.nodes.Controller.isLocking(Controller.java:105)
+	at projects.SDWSN.nodes.Controller.run(Controller.java:149)
 	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:04:32 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:04:59 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:09:24 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:22:59 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:23:14 PM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at jsensor.utils.RandomGenerator.nextInt(RandomGenerator.java:38)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:51)
-	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
-	at jsensor.Main.run(Main.java:162)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:41:41 PM jsensor.Main run
-SEVERE: null
-java.lang.NullPointerException
-	at jsensor.nodes.models.ConnectivityModel.updateConnection(ConnectivityModel.java:171)
-	at jsensor.nodes.Node.updateConnection(Node.java:529)
-	at projects.SDWSN.nodes.Sensor.findController(Sensor.java:77)
-	at projects.SDWSN.nodes.Sensor.onCreation(Sensor.java:47)
-	at jsensor.Main.run(Main.java:143)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 3:42:24 PM jsensor.Main run
-SEVERE: null
-java.lang.NullPointerException
-	at jsensor.nodes.models.ConnectivityModel.updateConnection(ConnectivityModel.java:171)
-	at jsensor.nodes.Node.updateConnection(Node.java:529)
-	at projects.SDWSN.nodes.Sensor.findController(Sensor.java:77)
-	at projects.SDWSN.nodes.Sensor.onCreation(Sensor.java:47)
-	at jsensor.Main.run(Main.java:143)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 4:45:02 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:70)
-	at projects.SDWSN.nodes.SubController.test(SubController.java:59)
-	at projects.SDWSN.CustomGlobal.postRun(CustomGlobal.java:54)
-	at jsensor.Main.run(Main.java:163)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 4:52:09 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:71)
-	at projects.SDWSN.nodes.SubController.test(SubController.java:59)
-	at projects.SDWSN.CustomGlobal.postRun(CustomGlobal.java:54)
-	at jsensor.Main.run(Main.java:163)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 23, 2019 5:02:59 PM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:69)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:24)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 23, 2019 5:02:59 PM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:69)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:24)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 23, 2019 5:02:59 PM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:69)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:24)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 23, 2019 5:02:59 PM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:69)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:24)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 23, 2019 5:03:18 PM jsensor.Main run
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at findSensors(SubController.java:69)
-	at projects.SDWSN.nodes.SubController.test(SubController.java:59)
-	at projects.SDWSN.CustomGlobal.postRun(CustomGlobal.java:54)
-	at jsensor.Main.run(Main.java:163)
-	at jsensor.Main.main(Main.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.uiDesigner.snapShooter.SnapShooter.main(SnapShooter.java:59)
-
-May 26, 2019 10:40:36 AM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.nodes.SubController.findSensors(SubController.java:72)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:25)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 26, 2019 10:40:53 AM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.nodes.SubController.findSensors(SubController.java:72)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:25)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 26, 2019 10:41:11 AM jsensor.runtime.threads.AssynchronousConsumerCallable call
-SEVERE: null
-java.lang.ClassCastException: projects.SDWSN.nodes.Controller cannot be cast to projects.SDWSN.nodes.Sensor
-	at projects.SDWSN.nodes.SubController.findSensors(SubController.java:72)
-	at projects.SDWSN.nodes.SubController.handleMessages(SubController.java:25)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:80)
-	at jsensor.runtime.threads.AssynchronousConsumerCallable.call(AssynchronousConsumerCallable.java:1)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-
-May 26, 2019 11:06:36 AM jsensor.Main run
-SEVERE: null
-java.lang.IllegalArgumentException: bound must be positive
-	at java.util.Random.nextInt(Random.java:388)
-	at projects.SDWSN.CustomGlobal.preRound(CustomGlobal.java:37)
 	at jsensor.runtime.AssynchronousRuntime.run(AssynchronousRuntime.java:84)
 	at jsensor.Main.run(Main.java:162)
 	at jsensor.Main.main(Main.java:78)
