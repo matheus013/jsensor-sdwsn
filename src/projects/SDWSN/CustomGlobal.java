@@ -14,7 +14,7 @@ import projects.SDWSN.probability.Dice;
 
 
 public class CustomGlobal extends AbsCustomGlobal {
-    private int rounds = 1;
+    public static int rounds = 1;
 
 
     @Override

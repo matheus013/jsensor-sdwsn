@@ -3,15 +3,18 @@ package projects.SDWSN.nodes;
 import jsensor.nodes.Node;
 import jsensor.nodes.messages.Inbox;
 import jsensor.nodes.messages.Message;
-import jsensor.runtime.Jsensor;
+import projects.SDWSN.CustomGlobal;
 import projects.SDWSN.messages.Sense;
 import projects.SDWSN.probability.Dice;
 import projects.SDWSN.service.TypeSense;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import java.util.LinkedList;
 import java.util.Random;
 
-import static projects.SDWSN.statics.EnumSingleton.typeSenses;
+import static projects.SDWSN.statics.SenseEnumSingleton.typeSenses;
 
 
 public class Sensor extends Node {
@@ -73,5 +76,15 @@ public class Sensor extends Node {
     public void test() {
         System.out.print("Sensor ID: " + getID());
         System.out.println(" Parent ID: " + parent);
+    }
+
+    public JsonObject toJsonObject() {
+        JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+        return jsonObjectBuilder
+                .add("round", CustomGlobal.rounds)
+                .add("ID", this.ID)
+                .add("parent", this.parent)
+                .add("isLife", isLive)
+                .build();
     }
 }

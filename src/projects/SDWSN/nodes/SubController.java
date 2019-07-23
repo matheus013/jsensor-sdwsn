@@ -4,6 +4,7 @@ import jsensor.nodes.Node;
 import jsensor.nodes.messages.Inbox;
 import jsensor.nodes.messages.Message;
 import jsensor.runtime.Jsensor;
+import projects.SDWSN.CustomGlobal;
 import projects.SDWSN.messages.Request;
 import projects.SDWSN.messages.Sense;
 import projects.SDWSN.messages.ServicesReportMessage;
@@ -11,10 +12,13 @@ import projects.SDWSN.service.Service;
 import projects.SDWSN.service.ServiceSensor;
 import projects.SDWSN.service.TypeSense;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import static projects.SDWSN.statics.EnumSingleton.environments;
+import static projects.SDWSN.statics.SenseEnumSingleton.environments;
 
 public class SubController extends Node {
     private int lastCountMessages = 0;
@@ -121,5 +125,14 @@ public class SubController extends Node {
 
     public void updateMessages() {
         lastCountMessages = messagesIDs.size();
+    }
+
+    public JsonObject toJsonObject() {
+        JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
+        return jsonObjectBuilder
+                .add("round", CustomGlobal.rounds)
+                .add("ID", this.ID)
+                .add("receivedMessages", lastCountMessages)
+                .build();
     }
 }

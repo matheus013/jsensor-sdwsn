@@ -6,7 +6,7 @@ import projects.SDWSN.service.TypeSense;
 
 import static projects.SDWSN.service.Ambient.*;
 
-public class EnumSingleton {
+public class SenseEnumSingleton {
 
     public static TypeSense[] typeSenses = {TypeSense.TEMPERATURE, TypeSense.PRESSURE,
             TypeSense.LUMINOSITY, TypeSense.HUMIDITY};

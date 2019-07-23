@@ -1,26 +1,26 @@
 package projects.SDWSN.nodes;
 
 import javafx.util.Pair;
+import jdk.nashorn.internal.objects.Global;
 import jsensor.nodes.Node;
 import jsensor.nodes.messages.Inbox;
 import jsensor.nodes.messages.Message;
 import jsensor.runtime.Jsensor;
+import jsensor.utils.Configuration;
+import projects.SDWSN.CustomGlobal;
 import projects.SDWSN.events.FloodingTimer;
 import projects.SDWSN.events.OrcRequestService;
 import projects.SDWSN.messages.Request;
-import projects.SDWSN.messages.Sense;
 import projects.SDWSN.service.Ambient;
 import projects.SDWSN.service.Service;
 import projects.SDWSN.service.ServiceSensor;
 import projects.SDWSN.service.TypeSense;
-import projects.SDWSN.statics.EnumSingleton;
 
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 
@@ -123,10 +123,8 @@ public class Controller extends Node {
                 break;
 
             ServiceSensor service = (ServiceSensor) taskQueue.poll();
-            System.out.println(service);
             assert service != null;
             int responsible = getResponsible(service.getAmbient());
-            System.out.println("responsible: " + responsible);
             if (responsible == -1) {
                 invalidRequest++;
                 continue;
@@ -148,7 +146,6 @@ public class Controller extends Node {
 
             if (currentTime - time >= durationLock.get(pairID))
                 unlock(pairID);
-            System.out.println(pairID);
             if (!isLocking(pairID)) {
                 OrcRequestService orcRequestService = new OrcRequestService();
                 orcRequestService.setRequest(new Request(service).setSlaveID(responsible));
@@ -170,6 +167,8 @@ public class Controller extends Node {
     public JsonObject toJsonObject() {
         JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
         return jsonObjectBuilder
+                .add("round", CustomGlobal.rounds)
+                .add("ID", this.ID)
                 .add("tasksInQueue", taskQueue.size())
                 .add("taskConflict", taskConflict)
                 .add("receivedMessages", lastCountMessages)
